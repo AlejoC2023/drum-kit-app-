@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101014">
+    <title>DRUMLAB | Virtual Drum Kit</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a href="#" class="logo"><span class="logo-icon">◉</span> DRUM<span>LAB</span></a>
+        <div class="topbar-right"><span class="live-dot"></span><span class="studio-label">ONLINE STUDIO</span></div>
+    </header>
+
+    <main class="main-container">
+        <section class="hero">
+            <div class="eyebrow">YOUR PERSONAL MUSIC STUDIO</div>
+            <h1>FEEL THE <span>BEAT.</span></h1>
+            <p>Create rhythms, experiment with sounds and make your own music.</p>
+        </section>
+
+        <section class="studio-panel">
+            <div class="panel-header">
+                <div><span class="section-label">01 / INSTRUMENTS</span><h2>Drum Machine</h2></div>
+                <div class="sound-indicator"><span class="live-dot"></span> SOUND READY</div>
+            </div>
+
+            <div class="drum-grid">
+                <button class="drum-pad pad-kick" data-sound="kick" data-key="A"><span class="pad-number">01</span><span class="pad-symbol">◉</span><span class="pad-name">KICK</span><span class="pad-key">A</span></button>
+                <button class="drum-pad pad-snare" data-sound="snare" data-key="S"><span class="pad-number">02</span><span class="pad-symbol">◈</span><span class="pad-name">SNARE</span><span class="pad-key">S</span></button>
+                <button class="drum-pad pad-hihat" data-sound="hihat" data-key="D"><span class="pad-number">03</span><span class="pad-symbol">✳</span><span class="pad-name">HI-HAT</span><span class="pad-key">D</span></button>
+                <button class="drum-pad pad-openhat" data-sound="openhat" data-key="F"><span class="pad-number">04</span><span class="pad-symbol">✧</span><span class="pad-name">OPEN HAT</span><span class="pad-key">F</span></button>
+                <button class="drum-pad pad-ride" data-sound="ride" data-key="G"><span class="pad-number">05</span><span class="pad-symbol">◎</span><span class="pad-name">RIDE</span><span class="pad-key">G</span></button>
+                <button class="drum-pad pad-boom" data-sound="boom" data-key="H"><span class="pad-number">06</span><span class="pad-symbol">✴</span><span class="pad-name">BOOM</span><span class="pad-key">H</span></button>
+                <button class="drum-pad pad-tom" data-sound="tom" data-key="J"><span class="pad-number">07</span><span class="pad-symbol">◉</span><span class="pad-name">TOM</span><span class="pad-key">J</span></button>
+                <button class="drum-pad pad-clap" data-sound="clap" data-key="K"><span class="pad-number">08</span><span class="pad-symbol">✋</span><span class="pad-name">CLAP</span><span class="pad-key">K</span></button>
+                <button class="drum-pad pad-tink" data-sound="tink" data-key="L"><span class="pad-number">09</span><span class="pad-symbol">✦</span><span class="pad-name">TINK</span><span class="pad-key">L</span></button>
+            </div>
+
+            <div class="keyboard-guide"><span>⌨ KEYBOARD CONTROLS</span><span>A – L TO PLAY</span></div>
+        </section>
+
+        <section class="recording-panel">
+            <div class="recording-heading">
+                <div><span class="section-label">02 / PERFORMANCE</span><h2>Recording Studio</h2></div>
+                <div class="recording-status" id="recording-status">READY</div>
+            </div>
+
+            <div class="recording-controls">
+                <button id="record-button" class="control-button record-button"><span>●</span> RECORD</button>
+                <button id="play-button" class="control-button play-button" disabled><span>▶</span> PLAY</button>
+                <button id="stop-button" class="control-button stop-button"><span>■</span> STOP</button>
+                <button id="clear-button" class="control-button clear-button"><span>↻</span> CLEAR</button>
+            </div>
+
+            <div class="recording-info"><p id="status" role="status">Your studio is ready. Start playing!</p><span id="hit-count">0 HITS</span></div>
+        </section>
+    </main>
+
+    <footer><span>DRUMLAB © 2026</span><span>CREATE YOUR OWN RHYTHM.</span></footer>
+</body>
+</html>
